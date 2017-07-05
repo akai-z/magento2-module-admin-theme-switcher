@@ -1,5 +1,11 @@
-Admin Theme Switcher
+Admin Theme Switcher [![SensioLabsInsight](https://insight.sensiolabs.com/projects/31ee82f8-1839-45e8-a6f0-78962f4f4a86/small.png)](https://insight.sensiolabs.com/projects/31ee82f8-1839-45e8-a6f0-78962f4f4a86)
 ====================
+
+[![Build Status](https://travis-ci.org/akai-z/magento2-module-admin-theme-switcher.svg?branch=master)](https://travis-ci.org/akai-z/magento2-module-admin-theme-switcher)
+[![Dependency Status](https://www.versioneye.com/user/projects/595b9d5b368b080033562eef/badge.svg?style=flat)](https://www.versioneye.com/user/projects/595b9d5b368b080033562eef)
+[![Coverage](https://codeclimate.com/github/akai-z/magento2-module-admin-theme-switcher.png)](https://codeclimate.com/github/akai-z/magento2-module-admin-theme-switcher)
+[![Latest Stable Version](https://poser.pugx.org/akai/magento2-module-admin-theme-switcher/v/stable)](https://packagist.org/packages/akai/magento2-module-admin-theme-switcher)
+[![License](https://poser.pugx.org/akai/magento2-module-admin-theme-switcher/license)](https://packagist.org/packages/akai/magento2-module-admin-theme-switcher)
 
 #### Contents
 * [Synopsis](#synopsis)
@@ -12,7 +18,7 @@ Admin Theme Switcher
 
 ## Synopsis
 
-A Magento 2 module that allows users to easily switch between admin themes..
+A Magento 2 module that allows users to easily switch between admin themes.
 
 ## Overview
 

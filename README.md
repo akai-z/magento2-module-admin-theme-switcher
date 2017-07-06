@@ -1,4 +1,4 @@
-Admin Theme Switcher [![SensioLabsInsight](https://insight.sensiolabs.com/projects/31ee82f8-1839-45e8-a6f0-78962f4f4a86/small.png)](https://insight.sensiolabs.com/projects/31ee82f8-1839-45e8-a6f0-78962f4f4a86)
+Admin Theme Switcher [![SensioLabsInsight](https://insight.sensiolabs.com/projects/33440099-8b6d-46ab-896a-70487a3e62e6/small.png)](https://insight.sensiolabs.com/projects/33440099-8b6d-46ab-896a-70487a3e62e6)
 ====================
 
 [![Build Status](https://travis-ci.org/akai-z/magento2-module-admin-theme-switcher.svg?branch=master)](https://travis-ci.org/akai-z/magento2-module-admin-theme-switcher)
@@ -40,7 +40,7 @@ Make sure that Packagist repository is not disabled.
 
 Run Composer require to install the module:
 
-    php <your Composer install dir>/composer.phar require akai/module-admin-theme-switcher:~1.0
+    php <your Composer install dir>/composer.phar require akai/module-admin-theme-switcher:^1.0
 
 ### 2. Clone the admin-theme-switcher repository
 Clone the [admin-theme-switcher](https://github.com/akai-z/admin-theme-switcher) repository using either the HTTPS or SSH protocols.

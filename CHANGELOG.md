@@ -1,10 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [Unreleased](https://github.com/akai-z/magento2-module-admin-theme-switcher/compare/1.0.1...HEAD)
 **Changed**
-* Remove unnecessary required packages in `composer.json` file.
 * Enable Magento `2.3` and `2.4` support in `composer.json` file.
+
+**Removed**
+* Unnecessary required packages in `composer.json` file.
 
 ## [1.0.1](https://github.com/akai-z/magento2-module-admin-theme-switcher/tree/1.0.1) - 2017-07-06
 [Full Changelog](https://github.com/akai-z/magento2-module-admin-theme-switcher/compare/1.0.0...1.0.1)

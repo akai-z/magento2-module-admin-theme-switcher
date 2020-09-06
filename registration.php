@@ -14,8 +14,10 @@
  * @see       https://api.github.com/user/4558603/
  */
 
-\Magento\Framework\Component\ComponentRegistrar::register(
-    \Magento\Framework\Component\ComponentRegistrar::MODULE,
+use Magento\Framework\Component\ComponentRegistrar;
+
+ComponentRegistrar::register(
+    ComponentRegistrar::MODULE,
     'Akai_AdminThemeSwitcher',
     __DIR__
 );

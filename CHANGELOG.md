@@ -18,6 +18,7 @@ in case Magento removes them from the core code later.
 **Changed**
 * Rename plugin `view_design` to `get_configuration_design_admin_theme`.
 * Update `README.md` file.
+* Sort PHP `use` statements alphabetically.
 
 **Removed**
 * Unnecessary code from `etc/adminhtml/di.xml`.

@@ -15,9 +15,9 @@
  */
 namespace Akai\AdminThemeSwitcher\Model\Plugin\View;
 
-use Magento\Theme\Model\View\Design as ViewDesign;
-use Magento\Framework\App\Config\ScopeConfigInterface as ScopeConfig;
 use Magento\Framework\App\Area as AppArea;
+use Magento\Framework\App\Config\ScopeConfigInterface as ScopeConfig;
+use Magento\Theme\Model\View\Design as ViewDesign;
 
 class Design
 {

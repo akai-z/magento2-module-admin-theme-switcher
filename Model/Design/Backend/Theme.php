@@ -15,16 +15,16 @@
  */
 namespace Akai\AdminThemeSwitcher\Model\Design\Backend;
 
-use Magento\Framework\App\Config\Value as ConfigValue;
-use Magento\Framework\Model\Context;
-use Magento\Framework\Registry;
-use Magento\Store\Model\ScopeInterface as Scope;
-use Magento\Framework\App\Config\ScopeConfigInterface as ScopeConfig;
-use Magento\Framework\App\Cache\TypeListInterface as CacheTypeList;
-use Magento\Framework\View\DesignInterface as ViewDesign;
-use Magento\Framework\Model\ResourceModel\AbstractResource as Resource;
-use Magento\Framework\Data\Collection\AbstractDb as ResourceCollection;
 use Magento\Framework\App\Area as AppArea;
+use Magento\Framework\App\Cache\TypeListInterface as CacheTypeList;
+use Magento\Framework\App\Config\ScopeConfigInterface as ScopeConfig;
+use Magento\Framework\App\Config\Value as ConfigValue;
+use Magento\Framework\Data\Collection\AbstractDb as ResourceCollection;
+use Magento\Framework\Model\Context;
+use Magento\Framework\Model\ResourceModel\AbstractResource as Resource;
+use Magento\Framework\Registry;
+use Magento\Framework\View\DesignInterface as ViewDesign;
+use Magento\Store\Model\ScopeInterface as Scope;
 
 class Theme extends ConfigValue
 {

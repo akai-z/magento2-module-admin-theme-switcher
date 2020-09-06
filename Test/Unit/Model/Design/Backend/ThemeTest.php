@@ -16,9 +16,9 @@
 namespace Akai\AdminThemeSwitcher\Test\Unit\Model\Design\Backend;
 
 use Magento\Framework\App\Area;
-use Magento\Store\Model\ScopeInterface as Scope;
 use Magento\Framework\App\Config\ScopeConfigInterface as ScopeConfig;
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
+use Magento\Store\Model\ScopeInterface as Scope;
 use Magento\Theme\Model\Design\Backend\Theme;
 
 class ThemeTest extends \PHPUnit_Framework_TestCase

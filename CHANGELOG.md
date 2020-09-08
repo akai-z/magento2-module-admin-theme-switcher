@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased](https://github.com/akai-z/magento2-module-admin-theme-switcher/compare/1.0.1...HEAD)
+**Added**
+`COPYING.txt` file.
+
 **Changed**
 * Enable Magento `2.3` and `2.4` support in `composer.json` file.
 

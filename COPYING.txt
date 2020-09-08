@@ -1,0 +1,8 @@
+Copyright 2020 Akai-Z.
+
+Each source file included in this Magento module is licensed under GNU General Public License version 2 (GPLv2).
+
+The license is bundled with this package in the file LICENSE.txt.
+
+It is also available through the world-wide-web at this URL:
+https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html

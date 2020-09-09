@@ -16,6 +16,11 @@ class Config
     const XML_PATH_ADMIN_THEME_ID = 'design/theme/admin_theme_id';
 
     /**
+     * Default admin theme path/code.
+     */
+    const DEFAULT_ADMIN_THEME = 'Magento/backend';
+
+    /**
      * @var ScopeConfig
      */
     private $scopeConfig;
@@ -26,11 +31,12 @@ class Config
     }
 
     /**
-     * @return string|null
+     * @return string
      */
     public function getAdminThemeId()
     {
-        return $this->scopeConfig->getValue(self::XML_PATH_ADMIN_THEME_ID);
+        $adminThemeId = $this->scopeConfig->getValue(self::XML_PATH_ADMIN_THEME_ID);
+        return $adminThemeId ?: self::DEFAULT_ADMIN_THEME;
     }
 
     /**

@@ -11,11 +11,6 @@ use Magento\Theme\Model\View\Design as ViewDesign;
 class Design
 {
     /**
-     * Admin theme design configuration XML path.
-     */
-    const XML_PATH_ADMIN_THEME_ID = 'design/theme/admin_theme_id';
-
-    /**
      * Default admin theme path/code.
      */
     const DEFAULT_ADMIN_THEME = 'Magento/backend';

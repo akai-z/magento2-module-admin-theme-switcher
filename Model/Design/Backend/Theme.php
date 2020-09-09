@@ -4,6 +4,7 @@
  */
 namespace Akai\AdminThemeSwitcher\Model\Design\Backend;
 
+use Akai\AdminThemeSwitcher\Model\Config;
 use Magento\Framework\App\Area as AppArea;
 use Magento\Framework\App\Cache\TypeListInterface as CacheTypeList;
 use Magento\Framework\App\Config\ScopeConfigInterface as ScopeConfig;
@@ -13,15 +14,9 @@ use Magento\Framework\Model\Context;
 use Magento\Framework\Model\ResourceModel\AbstractResource as Resource;
 use Magento\Framework\Registry;
 use Magento\Framework\View\DesignInterface as ViewDesign;
-use Magento\Store\Model\ScopeInterface as Scope;
 
 class Theme extends ConfigValue
 {
-    /**
-     * Path to config node with list of caches.
-     */
-    const XML_PATH_INVALID_CACHES = 'design/invalid_caches';
-
     /**
      * Design package instance.
      *
@@ -30,11 +25,17 @@ class Theme extends ConfigValue
     private $design = null;
 
     /**
+     * @var Config
+     */
+    private $config;
+
+    /**
      * @param Context            $context
      * @param Registry           $registry
      * @param ScopeConfig        $config
      * @param CacheTypeList      $cacheTypeList
      * @param ViewDesign         $design
+     * @param Config             $config
      * @param Resource           $resource
      * @param ResourceCollection $resourceCollection
      * @param array              $data
@@ -42,15 +43,18 @@ class Theme extends ConfigValue
     public function __construct(
         Context $context,
         Registry $registry,
-        ScopeConfig $config,
+        ScopeConfig $scopeConfig,
         CacheTypeList $cacheTypeList,
         ViewDesign $design,
+        Config $config,
         Resource $resource = null,
         ResourceCollection $resourceCollection = null,
         array $data = []
     ) {
         $this->design = $design;
-        parent::__construct($context, $registry, $config, $cacheTypeList, $resource, $resourceCollection, $data);
+        $this->config = $config;
+
+        parent::__construct($context, $registry, $scopeConfig, $cacheTypeList, $resource, $resourceCollection, $data);
     }
 
     /**
@@ -90,15 +94,8 @@ class Theme extends ConfigValue
 
     private function invalidateCache()
     {
-        $types = array_keys(
-            $this->_config->getValue(
-                self::XML_PATH_INVALID_CACHES,
-                Scope::SCOPE_STORE
-            )
-        );
-
         if ($this->isValueChanged()) {
-            $this->cacheTypeList->invalidate($types);
+            $this->cacheTypeList->invalidate($this->config->getDesignInvalidCaches());
         }
     }
 }

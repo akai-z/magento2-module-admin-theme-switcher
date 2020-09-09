@@ -11,11 +11,6 @@ use Magento\Theme\Model\View\Design as ViewDesign;
 class Design
 {
     /**
-     * Default admin theme path/code.
-     */
-    const DEFAULT_ADMIN_THEME = 'Magento/backend';
-
-    /**
      * @var ViewDesign
      */
     private $viewDesign;
@@ -54,9 +49,6 @@ class Design
         // @codingStandardsIgnoreEnd
         if ($this->viewDesign->getArea() == AppArea::AREA_ADMINHTML) {
             $result = $this->config->getAdminThemeId();
-            if (!$result) {
-                $result = self::DEFAULT_ADMIN_THEME;
-            }
         }
 
         return $result;

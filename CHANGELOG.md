@@ -6,9 +6,6 @@ All notable changes to this project will be documented in this file.
 * `COPYING.txt` file.
 * Config model.
 
-**Changed**
-* Enable Magento `2.3` and `2.4` support in `composer.json` file.
-
 **Removed**
 * Unnecessary required packages in `composer.json` file.
 

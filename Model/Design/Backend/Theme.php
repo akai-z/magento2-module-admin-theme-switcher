@@ -29,17 +29,6 @@ class Theme extends ConfigValue
      */
     private $config;
 
-    /**
-     * @param Context            $context
-     * @param Registry           $registry
-     * @param ScopeConfig        $config
-     * @param CacheTypeList      $cacheTypeList
-     * @param ViewDesign         $design
-     * @param Config             $config
-     * @param Resource           $resource
-     * @param ResourceCollection $resourceCollection
-     * @param array              $data
-     */
     public function __construct(
         Context $context,
         Registry $registry,

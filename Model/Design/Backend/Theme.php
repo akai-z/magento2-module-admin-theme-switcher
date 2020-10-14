@@ -43,7 +43,15 @@ class Theme extends ConfigValue
         $this->design = $design;
         $this->config = $config;
 
-        parent::__construct($context, $registry, $scopeConfig, $cacheTypeList, $resource, $resourceCollection, $data);
+        parent::__construct(
+            $context,
+            $registry,
+            $scopeConfig,
+            $cacheTypeList,
+            $resource,
+            $resourceCollection,
+            $data
+        );
     }
 
     /**

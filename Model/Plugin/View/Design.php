@@ -20,10 +20,6 @@ class Design
      */
     private $config;
 
-    /**
-     * @param ViewDesign  $viewDesign
-     * @param Config $config
-     */
     public function __construct(
         ViewDesign $viewDesign,
         Config $config
@@ -35,7 +31,6 @@ class Design
     /**
      * Get admin theme which is declared in configuration.
      *
-     * @param ViewDesign $subject
      * @param string|int $result
      *
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)

@@ -84,7 +84,7 @@ class ThemeTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @param int    $callNumber
+     * @param int $callNumber
      * @param string $oldValue
      *
      * @dataProvider afterSaveDataProvider
@@ -119,7 +119,7 @@ class ThemeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @param string|null $value
-     * @param string      $expectedResult
+     * @param string $expectedResult
      *
      * @dataProvider getValueDataProvider
      */

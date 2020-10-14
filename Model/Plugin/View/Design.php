@@ -20,10 +20,8 @@ class Design
      */
     private $config;
 
-    public function __construct(
-        ViewDesign $viewDesign,
-        Config $config
-    ) {
+    public function __construct(ViewDesign $viewDesign, Config $config)
+    {
         $this->viewDesign = $viewDesign;
         $this->config = $config;
     }

@@ -44,11 +44,11 @@ class Config
      */
     public function getDesignInvalidCaches()
     {
-        return array_keys(
-            $this->scopeConfig->getValue(
-                BackendTheme::XML_PATH_INVALID_CACHES,
-                Scope::SCOPE_STORE
-            )
+        $config = $this->scopeConfig->getValue(
+            BackendTheme::XML_PATH_INVALID_CACHES,
+            Scope::SCOPE_STORE
         );
+
+        return $config ? array_keys($config) : [];
     }
 }

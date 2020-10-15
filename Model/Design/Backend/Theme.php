@@ -76,11 +76,11 @@ class Theme extends ConfigValue
     }
 
     /**
-     * @return array
+     * @return string
      */
     public function getValue()
     {
-        return $this->getData('value') !== null ? $this->getData('value') : '';
+        return (string) $this->_getData('value');
     }
 
     private function setDesignTheme()

@@ -40,7 +40,7 @@ class Design
     public function afterGetConfigurationDesignTheme(ViewDesign $subject, $result)
     {
         // @codingStandardsIgnoreEnd
-        if ($this->viewDesign->getArea() == AppArea::AREA_ADMINHTML) {
+        if ($this->viewDesign->getArea() === AppArea::AREA_ADMINHTML) {
             $result = $this->config->getAdminThemeId();
         }
 

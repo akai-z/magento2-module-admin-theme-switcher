@@ -55,17 +55,11 @@ class Theme extends ConfigValue
     }
 
     /**
-     * Validate specified value against admin area.
-     *
      * @return Theme
      */
     public function beforeSave()
     {
-        if ('' != $this->getValue()) {
-            $design = clone $this->design;
-            $design->setDesignTheme($this->getValue(), AppArea::AREA_ADMINHTML);
-        }
-
+        $this->setDesignTheme();
         return parent::beforeSave();
     }
 
@@ -87,6 +81,17 @@ class Theme extends ConfigValue
     public function getValue()
     {
         return $this->getData('value') !== null ? $this->getData('value') : '';
+    }
+
+    private function setDesignTheme()
+    {
+        $theme = $this->getValue();
+
+        if ($theme) {
+            // Validate specified value against admin area.
+            $design = clone $this->design;
+            $design->setDesignTheme($theme, AppArea::AREA_ADMINHTML);
+        }
     }
 
     private function invalidateCache()
